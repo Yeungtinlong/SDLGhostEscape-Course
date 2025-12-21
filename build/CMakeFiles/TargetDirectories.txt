@@ -1,0 +1,17 @@
+/home/danny/projects/SDLGhostEscape-Course/build/CMakeFiles/GhostEscape-Linux.dir
+/home/danny/projects/SDLGhostEscape-Course/build/CMakeFiles/edit_cache.dir
+/home/danny/projects/SDLGhostEscape-Course/build/CMakeFiles/rebuild_cache.dir
+/home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3/CMakeFiles/SDL3-shared.dir
+/home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3/CMakeFiles/SDL3_test.dir
+/home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3/CMakeFiles/SDL_uclibc.dir
+/home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3/CMakeFiles/edit_cache.dir
+/home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3/CMakeFiles/rebuild_cache.dir
+/home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3_mixer/CMakeFiles/SDL3_mixer-shared.dir
+/home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3_mixer/CMakeFiles/edit_cache.dir
+/home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3_mixer/CMakeFiles/rebuild_cache.dir
+/home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3_image/CMakeFiles/SDL3_image-shared.dir
+/home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3_image/CMakeFiles/edit_cache.dir
+/home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3_image/CMakeFiles/rebuild_cache.dir
+/home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3_ttf/CMakeFiles/SDL3_ttf-shared.dir
+/home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3_ttf/CMakeFiles/edit_cache.dir
+/home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3_ttf/CMakeFiles/rebuild_cache.dir
