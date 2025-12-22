@@ -63,11 +63,11 @@ CMAKE_BINARY_DIR = /home/danny/projects/SDLGhostEscape-Course/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/GhostEscape-Linux.dir/all
 all: 3rdparty/SDL3/all
 all: 3rdparty/SDL3_mixer/all
 all: 3rdparty/SDL3_image/all
 all: 3rdparty/SDL3_ttf/all
+all: GhostEscape/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -75,14 +75,15 @@ preinstall: 3rdparty/SDL3/preinstall
 preinstall: 3rdparty/SDL3_mixer/preinstall
 preinstall: 3rdparty/SDL3_image/preinstall
 preinstall: 3rdparty/SDL3_ttf/preinstall
+preinstall: GhostEscape/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/GhostEscape-Linux.dir/clean
 clean: 3rdparty/SDL3/clean
 clean: 3rdparty/SDL3_mixer/clean
 clean: 3rdparty/SDL3_image/clean
 clean: 3rdparty/SDL3_ttf/clean
+clean: GhostEscape/clean
 .PHONY : clean
 
 #=============================================================================
@@ -150,33 +151,19 @@ clean: 3rdparty/SDL3_ttf/clean
 .PHONY : 3rdparty/SDL3_ttf/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/GhostEscape-Linux.dir
+# Directory level rules for directory GhostEscape
 
-# All Build rule for target.
-CMakeFiles/GhostEscape-Linux.dir/all: 3rdparty/SDL3/CMakeFiles/SDL3-shared.dir/all
-CMakeFiles/GhostEscape-Linux.dir/all: 3rdparty/SDL3_mixer/CMakeFiles/SDL3_mixer-shared.dir/all
-CMakeFiles/GhostEscape-Linux.dir/all: 3rdparty/SDL3_image/CMakeFiles/SDL3_image-shared.dir/all
-CMakeFiles/GhostEscape-Linux.dir/all: 3rdparty/SDL3_ttf/CMakeFiles/SDL3_ttf-shared.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GhostEscape-Linux.dir/build.make CMakeFiles/GhostEscape-Linux.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GhostEscape-Linux.dir/build.make CMakeFiles/GhostEscape-Linux.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/danny/projects/SDLGhostEscape-Course/build/CMakeFiles --progress-num=1 "Built target GhostEscape-Linux"
-.PHONY : CMakeFiles/GhostEscape-Linux.dir/all
+# Recursive "all" directory target.
+GhostEscape/all: GhostEscape/CMakeFiles/GhostEscape-Linux.dir/all
+.PHONY : GhostEscape/all
 
-# Build rule for subdir invocation for target.
-CMakeFiles/GhostEscape-Linux.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/danny/projects/SDLGhostEscape-Course/build/CMakeFiles 98
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/GhostEscape-Linux.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/danny/projects/SDLGhostEscape-Course/build/CMakeFiles 0
-.PHONY : CMakeFiles/GhostEscape-Linux.dir/rule
+# Recursive "preinstall" directory target.
+GhostEscape/preinstall:
+.PHONY : GhostEscape/preinstall
 
-# Convenience name for target.
-GhostEscape-Linux: CMakeFiles/GhostEscape-Linux.dir/rule
-.PHONY : GhostEscape-Linux
-
-# clean rule for target.
-CMakeFiles/GhostEscape-Linux.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GhostEscape-Linux.dir/build.make CMakeFiles/GhostEscape-Linux.dir/clean
-.PHONY : CMakeFiles/GhostEscape-Linux.dir/clean
+# Recursive "clean" directory target.
+GhostEscape/clean: GhostEscape/CMakeFiles/GhostEscape-Linux.dir/clean
+.PHONY : GhostEscape/clean
 
 #=============================================================================
 # Target rules for target 3rdparty/SDL3/CMakeFiles/SDL3-shared.dir
@@ -333,6 +320,35 @@ SDL3_ttf-shared: 3rdparty/SDL3_ttf/CMakeFiles/SDL3_ttf-shared.dir/rule
 3rdparty/SDL3_ttf/CMakeFiles/SDL3_ttf-shared.dir/clean:
 	$(MAKE) $(MAKESILENT) -f 3rdparty/SDL3_ttf/CMakeFiles/SDL3_ttf-shared.dir/build.make 3rdparty/SDL3_ttf/CMakeFiles/SDL3_ttf-shared.dir/clean
 .PHONY : 3rdparty/SDL3_ttf/CMakeFiles/SDL3_ttf-shared.dir/clean
+
+#=============================================================================
+# Target rules for target GhostEscape/CMakeFiles/GhostEscape-Linux.dir
+
+# All Build rule for target.
+GhostEscape/CMakeFiles/GhostEscape-Linux.dir/all: 3rdparty/SDL3/CMakeFiles/SDL3-shared.dir/all
+GhostEscape/CMakeFiles/GhostEscape-Linux.dir/all: 3rdparty/SDL3_mixer/CMakeFiles/SDL3_mixer-shared.dir/all
+GhostEscape/CMakeFiles/GhostEscape-Linux.dir/all: 3rdparty/SDL3_image/CMakeFiles/SDL3_image-shared.dir/all
+GhostEscape/CMakeFiles/GhostEscape-Linux.dir/all: 3rdparty/SDL3_ttf/CMakeFiles/SDL3_ttf-shared.dir/all
+	$(MAKE) $(MAKESILENT) -f GhostEscape/CMakeFiles/GhostEscape-Linux.dir/build.make GhostEscape/CMakeFiles/GhostEscape-Linux.dir/depend
+	$(MAKE) $(MAKESILENT) -f GhostEscape/CMakeFiles/GhostEscape-Linux.dir/build.make GhostEscape/CMakeFiles/GhostEscape-Linux.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/danny/projects/SDLGhostEscape-Course/build/CMakeFiles --progress-num=1 "Built target GhostEscape-Linux"
+.PHONY : GhostEscape/CMakeFiles/GhostEscape-Linux.dir/all
+
+# Build rule for subdir invocation for target.
+GhostEscape/CMakeFiles/GhostEscape-Linux.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/danny/projects/SDLGhostEscape-Course/build/CMakeFiles 98
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GhostEscape/CMakeFiles/GhostEscape-Linux.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/danny/projects/SDLGhostEscape-Course/build/CMakeFiles 0
+.PHONY : GhostEscape/CMakeFiles/GhostEscape-Linux.dir/rule
+
+# Convenience name for target.
+GhostEscape-Linux: GhostEscape/CMakeFiles/GhostEscape-Linux.dir/rule
+.PHONY : GhostEscape-Linux
+
+# clean rule for target.
+GhostEscape/CMakeFiles/GhostEscape-Linux.dir/clean:
+	$(MAKE) $(MAKESILENT) -f GhostEscape/CMakeFiles/GhostEscape-Linux.dir/build.make GhostEscape/CMakeFiles/GhostEscape-Linux.dir/clean
+.PHONY : GhostEscape/CMakeFiles/GhostEscape-Linux.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

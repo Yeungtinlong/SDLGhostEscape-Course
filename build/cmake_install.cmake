@@ -48,6 +48,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3_mixer/cmake_install.cmake")
   include("/home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3_image/cmake_install.cmake")
   include("/home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3_ttf/cmake_install.cmake")
+  include("/home/danny/projects/SDLGhostEscape-Course/build/GhostEscape/cmake_install.cmake")
 
 endif()
 

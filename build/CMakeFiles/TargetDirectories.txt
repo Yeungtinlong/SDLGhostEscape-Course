@@ -1,4 +1,3 @@
-/home/danny/projects/SDLGhostEscape-Course/build/CMakeFiles/GhostEscape-Linux.dir
 /home/danny/projects/SDLGhostEscape-Course/build/CMakeFiles/edit_cache.dir
 /home/danny/projects/SDLGhostEscape-Course/build/CMakeFiles/rebuild_cache.dir
 /home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3/CMakeFiles/SDL3-shared.dir
@@ -15,3 +14,6 @@
 /home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3_ttf/CMakeFiles/SDL3_ttf-shared.dir
 /home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3_ttf/CMakeFiles/edit_cache.dir
 /home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3_ttf/CMakeFiles/rebuild_cache.dir
+/home/danny/projects/SDLGhostEscape-Course/build/GhostEscape/CMakeFiles/GhostEscape-Linux.dir
+/home/danny/projects/SDLGhostEscape-Course/build/GhostEscape/CMakeFiles/edit_cache.dir
+/home/danny/projects/SDLGhostEscape-Course/build/GhostEscape/CMakeFiles/rebuild_cache.dir

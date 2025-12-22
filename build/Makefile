@@ -118,19 +118,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named GhostEscape-Linux
-
-# Build rule for target.
-GhostEscape-Linux: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GhostEscape-Linux
-.PHONY : GhostEscape-Linux
-
-# fast build rule for target.
-GhostEscape-Linux/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GhostEscape-Linux.dir/build.make CMakeFiles/GhostEscape-Linux.dir/build
-.PHONY : GhostEscape-Linux/fast
-
-#=============================================================================
 # Target rules for targets named SDL3-shared
 
 # Build rule for target.
@@ -208,125 +195,18 @@ SDL3_ttf-shared/fast:
 	$(MAKE) $(MAKESILENT) -f 3rdparty/SDL3_ttf/CMakeFiles/SDL3_ttf-shared.dir/build.make 3rdparty/SDL3_ttf/CMakeFiles/SDL3_ttf-shared.dir/build
 .PHONY : SDL3_ttf-shared/fast
 
-GhostEscape/core/game.o: GhostEscape/core/game.cpp.o
-.PHONY : GhostEscape/core/game.o
+#=============================================================================
+# Target rules for targets named GhostEscape-Linux
 
-# target to build an object file
-GhostEscape/core/game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GhostEscape-Linux.dir/build.make CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/game.cpp.o
-.PHONY : GhostEscape/core/game.cpp.o
+# Build rule for target.
+GhostEscape-Linux: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GhostEscape-Linux
+.PHONY : GhostEscape-Linux
 
-GhostEscape/core/game.i: GhostEscape/core/game.cpp.i
-.PHONY : GhostEscape/core/game.i
-
-# target to preprocess a source file
-GhostEscape/core/game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GhostEscape-Linux.dir/build.make CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/game.cpp.i
-.PHONY : GhostEscape/core/game.cpp.i
-
-GhostEscape/core/game.s: GhostEscape/core/game.cpp.s
-.PHONY : GhostEscape/core/game.s
-
-# target to generate assembly for a file
-GhostEscape/core/game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GhostEscape-Linux.dir/build.make CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/game.cpp.s
-.PHONY : GhostEscape/core/game.cpp.s
-
-GhostEscape/core/object.o: GhostEscape/core/object.cpp.o
-.PHONY : GhostEscape/core/object.o
-
-# target to build an object file
-GhostEscape/core/object.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GhostEscape-Linux.dir/build.make CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object.cpp.o
-.PHONY : GhostEscape/core/object.cpp.o
-
-GhostEscape/core/object.i: GhostEscape/core/object.cpp.i
-.PHONY : GhostEscape/core/object.i
-
-# target to preprocess a source file
-GhostEscape/core/object.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GhostEscape-Linux.dir/build.make CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object.cpp.i
-.PHONY : GhostEscape/core/object.cpp.i
-
-GhostEscape/core/object.s: GhostEscape/core/object.cpp.s
-.PHONY : GhostEscape/core/object.s
-
-# target to generate assembly for a file
-GhostEscape/core/object.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GhostEscape-Linux.dir/build.make CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object.cpp.s
-.PHONY : GhostEscape/core/object.cpp.s
-
-GhostEscape/core/scene.o: GhostEscape/core/scene.cpp.o
-.PHONY : GhostEscape/core/scene.o
-
-# target to build an object file
-GhostEscape/core/scene.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GhostEscape-Linux.dir/build.make CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/scene.cpp.o
-.PHONY : GhostEscape/core/scene.cpp.o
-
-GhostEscape/core/scene.i: GhostEscape/core/scene.cpp.i
-.PHONY : GhostEscape/core/scene.i
-
-# target to preprocess a source file
-GhostEscape/core/scene.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GhostEscape-Linux.dir/build.make CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/scene.cpp.i
-.PHONY : GhostEscape/core/scene.cpp.i
-
-GhostEscape/core/scene.s: GhostEscape/core/scene.cpp.s
-.PHONY : GhostEscape/core/scene.s
-
-# target to generate assembly for a file
-GhostEscape/core/scene.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GhostEscape-Linux.dir/build.make CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/scene.cpp.s
-.PHONY : GhostEscape/core/scene.cpp.s
-
-GhostEscape/main.o: GhostEscape/main.cpp.o
-.PHONY : GhostEscape/main.o
-
-# target to build an object file
-GhostEscape/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GhostEscape-Linux.dir/build.make CMakeFiles/GhostEscape-Linux.dir/GhostEscape/main.cpp.o
-.PHONY : GhostEscape/main.cpp.o
-
-GhostEscape/main.i: GhostEscape/main.cpp.i
-.PHONY : GhostEscape/main.i
-
-# target to preprocess a source file
-GhostEscape/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GhostEscape-Linux.dir/build.make CMakeFiles/GhostEscape-Linux.dir/GhostEscape/main.cpp.i
-.PHONY : GhostEscape/main.cpp.i
-
-GhostEscape/main.s: GhostEscape/main.cpp.s
-.PHONY : GhostEscape/main.s
-
-# target to generate assembly for a file
-GhostEscape/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GhostEscape-Linux.dir/build.make CMakeFiles/GhostEscape-Linux.dir/GhostEscape/main.cpp.s
-.PHONY : GhostEscape/main.cpp.s
-
-GhostEscape/scene_main.o: GhostEscape/scene_main.cpp.o
-.PHONY : GhostEscape/scene_main.o
-
-# target to build an object file
-GhostEscape/scene_main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GhostEscape-Linux.dir/build.make CMakeFiles/GhostEscape-Linux.dir/GhostEscape/scene_main.cpp.o
-.PHONY : GhostEscape/scene_main.cpp.o
-
-GhostEscape/scene_main.i: GhostEscape/scene_main.cpp.i
-.PHONY : GhostEscape/scene_main.i
-
-# target to preprocess a source file
-GhostEscape/scene_main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GhostEscape-Linux.dir/build.make CMakeFiles/GhostEscape-Linux.dir/GhostEscape/scene_main.cpp.i
-.PHONY : GhostEscape/scene_main.cpp.i
-
-GhostEscape/scene_main.s: GhostEscape/scene_main.cpp.s
-.PHONY : GhostEscape/scene_main.s
-
-# target to generate assembly for a file
-GhostEscape/scene_main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GhostEscape-Linux.dir/build.make CMakeFiles/GhostEscape-Linux.dir/GhostEscape/scene_main.cpp.s
-.PHONY : GhostEscape/scene_main.cpp.s
+# fast build rule for target.
+GhostEscape-Linux/fast:
+	$(MAKE) $(MAKESILENT) -f GhostEscape/CMakeFiles/GhostEscape-Linux.dir/build.make GhostEscape/CMakeFiles/GhostEscape-Linux.dir/build
+.PHONY : GhostEscape-Linux/fast
 
 # Help Target
 help:
@@ -343,21 +223,6 @@ help:
 	@echo "... SDL3_test"
 	@echo "... SDL3_ttf-shared"
 	@echo "... SDL_uclibc"
-	@echo "... GhostEscape/core/game.o"
-	@echo "... GhostEscape/core/game.i"
-	@echo "... GhostEscape/core/game.s"
-	@echo "... GhostEscape/core/object.o"
-	@echo "... GhostEscape/core/object.i"
-	@echo "... GhostEscape/core/object.s"
-	@echo "... GhostEscape/core/scene.o"
-	@echo "... GhostEscape/core/scene.i"
-	@echo "... GhostEscape/core/scene.s"
-	@echo "... GhostEscape/main.o"
-	@echo "... GhostEscape/main.i"
-	@echo "... GhostEscape/main.s"
-	@echo "... GhostEscape/scene_main.o"
-	@echo "... GhostEscape/scene_main.i"
-	@echo "... GhostEscape/scene_main.s"
 .PHONY : help
 
 

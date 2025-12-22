@@ -1,0 +1,1 @@
+#include <GhostEscape/core/scene.h>

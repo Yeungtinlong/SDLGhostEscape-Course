@@ -62,6 +62,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/danny/projects/SDLGhostEscape-Course/3rdparty/SDL3_ttf/cmake/sdlmanpages.cmake"
   "/home/danny/projects/SDLGhostEscape-Course/3rdparty/SDL3_ttf/cmake/sdlplatform.cmake"
   "/home/danny/projects/SDLGhostEscape-Course/CMakeLists.txt"
+  "/home/danny/projects/SDLGhostEscape-Course/GhostEscape/CMakeLists.txt"
   "3rdparty/SDL3/CMakeFiles/SDL_build_config.h.intermediate"
   "3rdparty/SDL3/CMakeFiles/git-data/grabRef.cmake"
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
@@ -69,6 +70,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
   "CMakeFiles/VerifyGlobs.cmake"
   "CMakeFiles/cmake.verify_globs"
+  "/home/danny/projects/SDLGhostEscape-Course/cmake/deps.cmake"
   "/lib/x86_64-linux-gnu/cmake/fluidsynth/FluidSynthConfigVersion.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/fluidsynth/FluidSynthConfigVersion.cmake"
   "/usr/share/cmake-3.28/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
@@ -153,15 +155,16 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "3rdparty/SDL3_mixer/CMakeFiles/CMakeDirectoryInformation.cmake"
   "3rdparty/SDL3_image/CMakeFiles/CMakeDirectoryInformation.cmake"
   "3rdparty/SDL3_ttf/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "GhostEscape/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/GhostEscape-Linux.dir/DependInfo.cmake"
   "3rdparty/SDL3/CMakeFiles/SDL3-shared.dir/DependInfo.cmake"
   "3rdparty/SDL3/CMakeFiles/SDL3_test.dir/DependInfo.cmake"
   "3rdparty/SDL3/CMakeFiles/SDL_uclibc.dir/DependInfo.cmake"
   "3rdparty/SDL3_mixer/CMakeFiles/SDL3_mixer-shared.dir/DependInfo.cmake"
   "3rdparty/SDL3_image/CMakeFiles/SDL3_image-shared.dir/DependInfo.cmake"
   "3rdparty/SDL3_ttf/CMakeFiles/SDL3_ttf-shared.dir/DependInfo.cmake"
+  "GhostEscape/CMakeFiles/GhostEscape-Linux.dir/DependInfo.cmake"
   )
