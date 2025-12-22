@@ -6,5 +6,5 @@ C_DEFINES = -DDEBUG -DUSING_GENERATED_CONFIG_H
 
 C_INCLUDES = -I/home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3/include-config-debug/build_config -I/home/danny/projects/SDLGhostEscape-Course/3rdparty/SDL3/src -I/home/danny/projects/SDLGhostEscape-Course/3rdparty/SDL3/include
 
-C_FLAGS = -g -fvisibility=hidden -Wall -Wundef -Wfloat-conversion -fno-strict-aliasing -Wdocumentation -Wdocumentation-unknown-command -fcomment-block-commands=threadsafety -Wshadow -Wno-unused-local-typedefs -Wimplicit-fallthrough -fcolor-diagnostics
+C_FLAGS = -g -fPIC -fvisibility=hidden -Wall -Wundef -Wfloat-conversion -fno-strict-aliasing -Wdocumentation -Wdocumentation-unknown-command -fcomment-block-commands=threadsafety -Wshadow -Wno-unused-local-typedefs -Wimplicit-fallthrough -fcolor-diagnostics
 

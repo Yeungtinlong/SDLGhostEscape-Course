@@ -6,5 +6,5 @@ C_DEFINES = -DDEBUG
 
 C_INCLUDES = -I/home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3/include-revision -I/home/danny/projects/SDLGhostEscape-Course/3rdparty/SDL3/include
 
-C_FLAGS = -g -Wall -Wundef -Wfloat-conversion -fno-strict-aliasing -Wdocumentation -Wdocumentation-unknown-command -fcomment-block-commands=threadsafety -Wshadow -Wno-unused-local-typedefs -Wimplicit-fallthrough -fcolor-diagnostics
+C_FLAGS = -g -fPIC -Wall -Wundef -Wfloat-conversion -fno-strict-aliasing -Wdocumentation -Wdocumentation-unknown-command -fcomment-block-commands=threadsafety -Wshadow -Wno-unused-local-typedefs -Wimplicit-fallthrough -fcolor-diagnostics
 

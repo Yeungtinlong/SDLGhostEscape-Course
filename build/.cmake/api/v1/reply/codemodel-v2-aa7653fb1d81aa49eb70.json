@@ -193,7 +193,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "SDL3_test::@bf972efd1c776537efe3",
-					"jsonFile" : "target-SDL3_test-Debug-f9a0471fadb5f9677bba.json",
+					"jsonFile" : "target-SDL3_test-Debug-07163b71bcd3bae87e11.json",
 					"name" : "SDL3_test",
 					"projectIndex" : 1
 				},
@@ -207,7 +207,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "SDL_uclibc::@bf972efd1c776537efe3",
-					"jsonFile" : "target-SDL_uclibc-Debug-95d20ebb6740e8abb23b.json",
+					"jsonFile" : "target-SDL_uclibc-Debug-aecc0273079a2d865aa2.json",
 					"name" : "SDL_uclibc",
 					"projectIndex" : 1
 				}

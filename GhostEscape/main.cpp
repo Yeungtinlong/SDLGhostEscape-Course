@@ -3,7 +3,7 @@
 int main(int, char**)
 {
     Game& game = Game::GetInstance();
-    game.init("Ghost Escape", 800, 600);
+    game.init("Ghost Escape", 1280, 720);
     game.run();
 
     // if (SDL_Init(SDL_INIT_AUDIO | SDL_INIT_EVENTS) != 0) { }

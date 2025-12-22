@@ -25,10 +25,12 @@ public:
     void clean();
 
     // 工具函数
-    void drawGrid(const glm::vec2& top_left, const glm::vec2& bottom_right, int grid_size, SDL_FColor fcolor);
+    void drawGrid(const glm::vec2& top_left, const glm::vec2& bottom_right, float grid_size, SDL_FColor fcolor);
+    void drawBoundary(const glm::vec2& top_left, const glm::vec2& bottom_right, float boundary_size, SDL_FColor fcolor);
 
     // getters
     glm::vec2 getScreenSize() { return _screen_size; }
+    SDL_Renderer* getRenderer() { return _renderer; }
 
 private:
     Game(Game& game) = delete;

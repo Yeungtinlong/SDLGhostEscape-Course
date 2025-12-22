@@ -210,7 +210,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -fvisibility=hidden"
+					"fragment" : "-g -fPIC -fvisibility=hidden"
 				},
 				{
 					"backtrace" : 4,
