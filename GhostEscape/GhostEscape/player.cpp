@@ -1,9 +1,9 @@
-#include <GhostEscape/player.h>
 #include <GhostEscape/core/scene.h>
+#include <GhostEscape/player.h>
 
 void Player::init()
 {
-    _max_speed = 200.0f;
+    _max_speed = 500.0f;
 }
 
 void Player::handleEvents(const SDL_Event& event)

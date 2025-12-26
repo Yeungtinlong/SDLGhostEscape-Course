@@ -2401,6 +2401,12 @@
 },
 {
   "directory": "/home/danny/projects/SDLGhostEscape-Course/build/GhostEscape",
+  "command": "/usr/bin/clang++  -I/home/danny/projects/SDLGhostEscape-Course/GhostEscape -I/home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3/include-revision -I/home/danny/projects/SDLGhostEscape-Course/3rdparty/SDL3/include -I/home/danny/projects/SDLGhostEscape-Course/3rdparty/SDL3_image/include -I/home/danny/projects/SDLGhostEscape-Course/3rdparty/SDL3_ttf/include -I/home/danny/projects/SDLGhostEscape-Course/3rdparty/SDL3_mixer/include -g -std=gnu++17 -fPIE -o CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/scene.cpp.o -c /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/scene.cpp",
+  "file": "/home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/scene.cpp",
+  "output": "GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/scene.cpp.o"
+},
+{
+  "directory": "/home/danny/projects/SDLGhostEscape-Course/build/GhostEscape",
   "command": "/usr/bin/clang++  -I/home/danny/projects/SDLGhostEscape-Course/GhostEscape -I/home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3/include-revision -I/home/danny/projects/SDLGhostEscape-Course/3rdparty/SDL3/include -I/home/danny/projects/SDLGhostEscape-Course/3rdparty/SDL3_image/include -I/home/danny/projects/SDLGhostEscape-Course/3rdparty/SDL3_ttf/include -I/home/danny/projects/SDLGhostEscape-Course/3rdparty/SDL3_mixer/include -g -std=gnu++17 -fPIE -o CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_screen.cpp.o -c /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/object_screen.cpp",
   "file": "/home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/object_screen.cpp",
   "output": "GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_screen.cpp.o"
@@ -2410,5 +2416,11 @@
   "command": "/usr/bin/clang++  -I/home/danny/projects/SDLGhostEscape-Course/GhostEscape -I/home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3/include-revision -I/home/danny/projects/SDLGhostEscape-Course/3rdparty/SDL3/include -I/home/danny/projects/SDLGhostEscape-Course/3rdparty/SDL3_image/include -I/home/danny/projects/SDLGhostEscape-Course/3rdparty/SDL3_ttf/include -I/home/danny/projects/SDLGhostEscape-Course/3rdparty/SDL3_mixer/include -g -std=gnu++17 -fPIE -o CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_world.cpp.o -c /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/object_world.cpp",
   "file": "/home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/object_world.cpp",
   "output": "GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_world.cpp.o"
+},
+{
+  "directory": "/home/danny/projects/SDLGhostEscape-Course/build/GhostEscape",
+  "command": "/usr/bin/clang++  -I/home/danny/projects/SDLGhostEscape-Course/GhostEscape -I/home/danny/projects/SDLGhostEscape-Course/build/3rdparty/SDL3/include-revision -I/home/danny/projects/SDLGhostEscape-Course/3rdparty/SDL3/include -I/home/danny/projects/SDLGhostEscape-Course/3rdparty/SDL3_image/include -I/home/danny/projects/SDLGhostEscape-Course/3rdparty/SDL3_ttf/include -I/home/danny/projects/SDLGhostEscape-Course/3rdparty/SDL3_mixer/include -g -std=gnu++17 -fPIE -o CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/asset_store.cpp.o -c /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/asset_store.cpp",
+  "file": "/home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/asset_store.cpp",
+  "output": "GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/asset_store.cpp.o"
 }
 ]

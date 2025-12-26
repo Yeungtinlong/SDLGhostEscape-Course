@@ -1,4 +1,5 @@
 #pragma once
+
 #include <SDL3/SDL.h>
 #include <SDL3_image/SDL_image.h>
 #include <SDL3_mixer/SDL_mixer.h>
@@ -7,6 +8,7 @@
 #include <string>
 
 class Scene;
+class AssetStore;
 class Game {
 public:
     Game() { }
@@ -32,6 +34,7 @@ public:
     glm::vec2 getScreenSize() { return _screen_size; }
     SDL_Renderer* getRenderer() { return _renderer; }
     Scene* getCurrentScene() { return _current_scene; }
+    AssetStore* getAssetStore() { return _asset_store; }
 
 private:
     Game(Game& game) = delete;
@@ -48,4 +51,5 @@ private:
     Uint64 _frame_delay = 0;
     float _dt = 0.0f;
     Scene* _current_scene = nullptr;
+    AssetStore* _asset_store = nullptr;
 };

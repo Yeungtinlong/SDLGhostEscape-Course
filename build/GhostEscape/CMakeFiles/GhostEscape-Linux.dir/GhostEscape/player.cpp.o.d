@@ -1,9 +1,6 @@
 GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/player.cpp.o: \
   /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/player.cpp \
-  /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/player.h \
-  /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/actor.h \
-  /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/object_world.h \
-  /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/object_screen.h \
+  /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/scene.h \
   /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/object.h \
   /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/game.h \
   /home/danny/projects/SDLGhostEscape-Course/3rdparty/SDL3/include/SDL3/SDL.h \
@@ -419,9 +416,12 @@ GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/player.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/uses_allocator.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/uses_allocator_args.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple \
-  /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/scene.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/vector \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_uninitialized.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h \
-  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/vector.tcc
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/vector.tcc \
+  /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/player.h \
+  /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/actor.h \
+  /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/object_world.h \
+  /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/object_screen.h

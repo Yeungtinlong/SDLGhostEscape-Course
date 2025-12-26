@@ -1,4 +1,5 @@
 #include "game.h"
+#include <GhostEscape/core/asset_store.h>
 #include <GhostEscape/core/game.h>
 #include <GhostEscape/scene_main.h> // TODO: 这个include肯定是有问题的core里的类不应该依赖core外的类
 
@@ -49,6 +50,8 @@ void Game::init(std::string title, int width, int height)
     if (!SDL_SetRenderLogicalPresentation(_renderer, width, height, SDL_LOGICAL_PRESENTATION_LETTERBOX)) {
         SDL_LogError(SDL_LOG_CATEGORY_ERROR, "SDL_SetRenderLogicalPresentation Error: %s\n", SDL_GetError());
     }
+
+    _asset_store = new AssetStore(_renderer, _mixer);
 
     // SDL_Log("init success.");
     _current_scene = new SceneMain();
@@ -108,6 +111,11 @@ void Game::clean()
     if (_current_scene != nullptr) {
         _current_scene->clean();
         delete _current_scene;
+    }
+
+    if (_asset_store != nullptr) {
+        _asset_store->clean();
+        delete _asset_store;
     }
 
     // 清理 MIX

@@ -131,6 +131,30 @@ GhostEscape-Linux/fast:
 	cd /home/danny/projects/SDLGhostEscape-Course/build && $(MAKE) $(MAKESILENT) -f GhostEscape/CMakeFiles/GhostEscape-Linux.dir/build.make GhostEscape/CMakeFiles/GhostEscape-Linux.dir/build
 .PHONY : GhostEscape-Linux/fast
 
+GhostEscape/core/asset_store.o: GhostEscape/core/asset_store.cpp.o
+.PHONY : GhostEscape/core/asset_store.o
+
+# target to build an object file
+GhostEscape/core/asset_store.cpp.o:
+	cd /home/danny/projects/SDLGhostEscape-Course/build && $(MAKE) $(MAKESILENT) -f GhostEscape/CMakeFiles/GhostEscape-Linux.dir/build.make GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/asset_store.cpp.o
+.PHONY : GhostEscape/core/asset_store.cpp.o
+
+GhostEscape/core/asset_store.i: GhostEscape/core/asset_store.cpp.i
+.PHONY : GhostEscape/core/asset_store.i
+
+# target to preprocess a source file
+GhostEscape/core/asset_store.cpp.i:
+	cd /home/danny/projects/SDLGhostEscape-Course/build && $(MAKE) $(MAKESILENT) -f GhostEscape/CMakeFiles/GhostEscape-Linux.dir/build.make GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/asset_store.cpp.i
+.PHONY : GhostEscape/core/asset_store.cpp.i
+
+GhostEscape/core/asset_store.s: GhostEscape/core/asset_store.cpp.s
+.PHONY : GhostEscape/core/asset_store.s
+
+# target to generate assembly for a file
+GhostEscape/core/asset_store.cpp.s:
+	cd /home/danny/projects/SDLGhostEscape-Course/build && $(MAKE) $(MAKESILENT) -f GhostEscape/CMakeFiles/GhostEscape-Linux.dir/build.make GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/asset_store.cpp.s
+.PHONY : GhostEscape/core/asset_store.cpp.s
+
 GhostEscape/core/game.o: GhostEscape/core/game.cpp.o
 .PHONY : GhostEscape/core/game.o
 
@@ -227,6 +251,30 @@ GhostEscape/core/object_world.cpp.s:
 	cd /home/danny/projects/SDLGhostEscape-Course/build && $(MAKE) $(MAKESILENT) -f GhostEscape/CMakeFiles/GhostEscape-Linux.dir/build.make GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_world.cpp.s
 .PHONY : GhostEscape/core/object_world.cpp.s
 
+GhostEscape/core/scene.o: GhostEscape/core/scene.cpp.o
+.PHONY : GhostEscape/core/scene.o
+
+# target to build an object file
+GhostEscape/core/scene.cpp.o:
+	cd /home/danny/projects/SDLGhostEscape-Course/build && $(MAKE) $(MAKESILENT) -f GhostEscape/CMakeFiles/GhostEscape-Linux.dir/build.make GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/scene.cpp.o
+.PHONY : GhostEscape/core/scene.cpp.o
+
+GhostEscape/core/scene.i: GhostEscape/core/scene.cpp.i
+.PHONY : GhostEscape/core/scene.i
+
+# target to preprocess a source file
+GhostEscape/core/scene.cpp.i:
+	cd /home/danny/projects/SDLGhostEscape-Course/build && $(MAKE) $(MAKESILENT) -f GhostEscape/CMakeFiles/GhostEscape-Linux.dir/build.make GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/scene.cpp.i
+.PHONY : GhostEscape/core/scene.cpp.i
+
+GhostEscape/core/scene.s: GhostEscape/core/scene.cpp.s
+.PHONY : GhostEscape/core/scene.s
+
+# target to generate assembly for a file
+GhostEscape/core/scene.cpp.s:
+	cd /home/danny/projects/SDLGhostEscape-Course/build && $(MAKE) $(MAKESILENT) -f GhostEscape/CMakeFiles/GhostEscape-Linux.dir/build.make GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/scene.cpp.s
+.PHONY : GhostEscape/core/scene.cpp.s
+
 GhostEscape/main.o: GhostEscape/main.cpp.o
 .PHONY : GhostEscape/main.o
 
@@ -308,6 +356,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... GhostEscape-Linux"
+	@echo "... GhostEscape/core/asset_store.o"
+	@echo "... GhostEscape/core/asset_store.i"
+	@echo "... GhostEscape/core/asset_store.s"
 	@echo "... GhostEscape/core/game.o"
 	@echo "... GhostEscape/core/game.i"
 	@echo "... GhostEscape/core/game.s"
@@ -320,6 +371,9 @@ help:
 	@echo "... GhostEscape/core/object_world.o"
 	@echo "... GhostEscape/core/object_world.i"
 	@echo "... GhostEscape/core/object_world.s"
+	@echo "... GhostEscape/core/scene.o"
+	@echo "... GhostEscape/core/scene.i"
+	@echo "... GhostEscape/core/scene.s"
 	@echo "... GhostEscape/main.o"
 	@echo "... GhostEscape/main.i"
 	@echo "... GhostEscape/main.s"

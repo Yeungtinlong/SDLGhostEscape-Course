@@ -23,7 +23,7 @@ public:
     glm::vec2 getCameraPosition() { return _camera_position; }
     glm::vec2 getWorldSize() { return _world_size; }
     // setters
-    void setCameraPosition(glm::vec2 camera_position) { _camera_position = camera_position; }
+    void setCameraPosition(glm::vec2 camera_position);
 
 protected:
     glm::vec2 _camera_position { .0f, .0f };

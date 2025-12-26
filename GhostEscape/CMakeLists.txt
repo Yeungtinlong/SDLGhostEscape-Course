@@ -10,9 +10,10 @@ target_sources(${TARGET}
 
     "GhostEscape/core/game.cpp"
     "GhostEscape/core/object.cpp"
-    # "GhostEscape/core/scene.cpp"
+    "GhostEscape/core/scene.cpp"
     "GhostEscape/core/object_screen.cpp"
     "GhostEscape/core/object_world.cpp"
+    "GhostEscape/core/asset_store.cpp"
 )
 
 # target_include_directories(${TARGET} PUBLIC 

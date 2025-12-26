@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/asset_store.cpp.o"
+  "CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/asset_store.cpp.o.d"
   "CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/game.cpp.o"
   "CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/game.cpp.o.d"
   "CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object.cpp.o"
@@ -7,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_screen.cpp.o.d"
   "CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_world.cpp.o"
   "CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_world.cpp.o.d"
+  "CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/scene.cpp.o"
+  "CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/scene.cpp.o.d"
   "CMakeFiles/GhostEscape-Linux.dir/GhostEscape/main.cpp.o"
   "CMakeFiles/GhostEscape-Linux.dir/GhostEscape/main.cpp.o.d"
   "CMakeFiles/GhostEscape-Linux.dir/GhostEscape/player.cpp.o"

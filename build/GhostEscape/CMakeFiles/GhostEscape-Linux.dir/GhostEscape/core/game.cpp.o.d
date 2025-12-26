@@ -414,6 +414,15 @@ GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/game.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/uses_allocator.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/uses_allocator_args.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple \
+  /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/asset_store.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/unordered_map \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unordered_map.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable_policy.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ext/aligned_buffer.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/enable_special_members.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/node_handle.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/erase_if.h \
   /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/scene_main.h \
   /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/scene.h \
   /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/object.h \

@@ -139,10 +139,24 @@ GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object.cpp.s: cmak
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object.cpp.s"
 	cd /home/danny/projects/SDLGhostEscape-Course/build/GhostEscape && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/object.cpp -o CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object.cpp.s
 
+GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/scene.cpp.o: GhostEscape/CMakeFiles/GhostEscape-Linux.dir/flags.make
+GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/scene.cpp.o: /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/scene.cpp
+GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/scene.cpp.o: GhostEscape/CMakeFiles/GhostEscape-Linux.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/projects/SDLGhostEscape-Course/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/scene.cpp.o"
+	cd /home/danny/projects/SDLGhostEscape-Course/build/GhostEscape && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/scene.cpp.o -MF CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/scene.cpp.o.d -o CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/scene.cpp.o -c /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/scene.cpp
+
+GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/scene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/scene.cpp.i"
+	cd /home/danny/projects/SDLGhostEscape-Course/build/GhostEscape && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/scene.cpp > CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/scene.cpp.i
+
+GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/scene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/scene.cpp.s"
+	cd /home/danny/projects/SDLGhostEscape-Course/build/GhostEscape && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/scene.cpp -o CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/scene.cpp.s
+
 GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_screen.cpp.o: GhostEscape/CMakeFiles/GhostEscape-Linux.dir/flags.make
 GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_screen.cpp.o: /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/object_screen.cpp
 GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_screen.cpp.o: GhostEscape/CMakeFiles/GhostEscape-Linux.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/projects/SDLGhostEscape-Course/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_screen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/projects/SDLGhostEscape-Course/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_screen.cpp.o"
 	cd /home/danny/projects/SDLGhostEscape-Course/build/GhostEscape && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_screen.cpp.o -MF CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_screen.cpp.o.d -o CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_screen.cpp.o -c /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/object_screen.cpp
 
 GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_screen.cpp.i: cmake_force
@@ -156,7 +170,7 @@ GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_screen.cpp.
 GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_world.cpp.o: GhostEscape/CMakeFiles/GhostEscape-Linux.dir/flags.make
 GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_world.cpp.o: /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/object_world.cpp
 GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_world.cpp.o: GhostEscape/CMakeFiles/GhostEscape-Linux.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/projects/SDLGhostEscape-Course/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_world.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/projects/SDLGhostEscape-Course/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_world.cpp.o"
 	cd /home/danny/projects/SDLGhostEscape-Course/build/GhostEscape && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_world.cpp.o -MF CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_world.cpp.o.d -o CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_world.cpp.o -c /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/object_world.cpp
 
 GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_world.cpp.i: cmake_force
@@ -167,6 +181,20 @@ GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_world.cpp.s
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_world.cpp.s"
 	cd /home/danny/projects/SDLGhostEscape-Course/build/GhostEscape && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/object_world.cpp -o CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_world.cpp.s
 
+GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/asset_store.cpp.o: GhostEscape/CMakeFiles/GhostEscape-Linux.dir/flags.make
+GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/asset_store.cpp.o: /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/asset_store.cpp
+GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/asset_store.cpp.o: GhostEscape/CMakeFiles/GhostEscape-Linux.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/danny/projects/SDLGhostEscape-Course/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/asset_store.cpp.o"
+	cd /home/danny/projects/SDLGhostEscape-Course/build/GhostEscape && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/asset_store.cpp.o -MF CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/asset_store.cpp.o.d -o CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/asset_store.cpp.o -c /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/asset_store.cpp
+
+GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/asset_store.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/asset_store.cpp.i"
+	cd /home/danny/projects/SDLGhostEscape-Course/build/GhostEscape && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/asset_store.cpp > CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/asset_store.cpp.i
+
+GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/asset_store.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/asset_store.cpp.s"
+	cd /home/danny/projects/SDLGhostEscape-Course/build/GhostEscape && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danny/projects/SDLGhostEscape-Course/GhostEscape/GhostEscape/core/asset_store.cpp -o CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/asset_store.cpp.s
+
 # Object files for target GhostEscape-Linux
 GhostEscape__Linux_OBJECTS = \
 "CMakeFiles/GhostEscape-Linux.dir/GhostEscape/main.cpp.o" \
@@ -174,8 +202,10 @@ GhostEscape__Linux_OBJECTS = \
 "CMakeFiles/GhostEscape-Linux.dir/GhostEscape/player.cpp.o" \
 "CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/game.cpp.o" \
 "CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object.cpp.o" \
+"CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/scene.cpp.o" \
 "CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_screen.cpp.o" \
-"CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_world.cpp.o"
+"CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_world.cpp.o" \
+"CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/asset_store.cpp.o"
 
 # External object files for target GhostEscape-Linux
 GhostEscape__Linux_EXTERNAL_OBJECTS =
@@ -185,8 +215,10 @@ GhostEscape/GhostEscape-Linux: GhostEscape/CMakeFiles/GhostEscape-Linux.dir/Ghos
 GhostEscape/GhostEscape-Linux: GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/player.cpp.o
 GhostEscape/GhostEscape-Linux: GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/game.cpp.o
 GhostEscape/GhostEscape-Linux: GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object.cpp.o
+GhostEscape/GhostEscape-Linux: GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/scene.cpp.o
 GhostEscape/GhostEscape-Linux: GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_screen.cpp.o
 GhostEscape/GhostEscape-Linux: GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/object_world.cpp.o
+GhostEscape/GhostEscape-Linux: GhostEscape/CMakeFiles/GhostEscape-Linux.dir/GhostEscape/core/asset_store.cpp.o
 GhostEscape/GhostEscape-Linux: GhostEscape/CMakeFiles/GhostEscape-Linux.dir/build.make
 GhostEscape/GhostEscape-Linux: 3rdparty/SDL3_image/libSDL3_image.so.0.3.0
 GhostEscape/GhostEscape-Linux: 3rdparty/SDL3_ttf/libSDL3_ttf.so.0.3.0
@@ -194,7 +226,7 @@ GhostEscape/GhostEscape-Linux: 3rdparty/SDL3_mixer/libSDL3_mixer.so.0.1.0
 GhostEscape/GhostEscape-Linux: 3rdparty/SDL3/libSDL3.so.0.3.7
 GhostEscape/GhostEscape-Linux: /home/danny/projects/SDLGhostEscape-Course/3rdparty/SDL3/src/dynapi/SDL_dynapi.sym
 GhostEscape/GhostEscape-Linux: GhostEscape/CMakeFiles/GhostEscape-Linux.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/danny/projects/SDLGhostEscape-Course/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable GhostEscape-Linux"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/danny/projects/SDLGhostEscape-Course/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable GhostEscape-Linux"
 	cd /home/danny/projects/SDLGhostEscape-Course/build/GhostEscape && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GhostEscape-Linux.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
