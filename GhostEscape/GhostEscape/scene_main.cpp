@@ -41,8 +41,8 @@ void SceneMain::renderBackground()
     float grid_size = 80.0f;
     float boundary_size = 3.0f;
 
-    float start_grid_index_x = floorf32(_camera_position.x / grid_size);
-    float start_grid_index_y = floorf32(_camera_position.y / grid_size);
+    float start_grid_index_x = floor(_camera_position.x / grid_size);
+    float start_grid_index_y = floor(_camera_position.y / grid_size);
     glm::vec2 world_grid_count = _world_size / grid_size;
     float start_grid_index_x_valid = start_grid_index_x < 0 ? 0 : start_grid_index_x > world_grid_count.x ? world_grid_count.x
                                                                                                           : start_grid_index_x;
@@ -50,8 +50,8 @@ void SceneMain::renderBackground()
                                                                                                           : start_grid_index_y;
 
     glm::vec2 screen_size = game.getScreenSize();
-    float end_grid_index_x = ceilf32((_camera_position.x + screen_size.x) / grid_size);
-    float end_grid_index_y = ceilf32((_camera_position.y + screen_size.y) / grid_size);
+    float end_grid_index_x = ceil((_camera_position.x + screen_size.x) / grid_size);
+    float end_grid_index_y = ceil((_camera_position.y + screen_size.y) / grid_size);
 
     float end_grid_index_x_valid = end_grid_index_x < 0 ? 0 : end_grid_index_x > world_grid_count.x ? world_grid_count.x
                                                                                                     : end_grid_index_x;
