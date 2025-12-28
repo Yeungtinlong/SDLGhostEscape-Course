@@ -1,4 +1,4 @@
-#include "game.h"
+#include <GhostEscape/affiliate/sprite.h>
 #include <GhostEscape/core/asset_store.h>
 #include <GhostEscape/core/game.h>
 #include <GhostEscape/scene_main.h> // TODO: 这个include肯定是有问题的core里的类不应该依赖core外的类
@@ -163,4 +163,12 @@ void Game::drawBoundary(const glm::vec2& top_left, const glm::vec2& bottom_right
     }
 
     SDL_SetRenderDrawColorFloat(_renderer, fcolor_bk.r, fcolor_bk.g, fcolor_bk.b, fcolor_bk.a);
+}
+
+void Game::renderTexture(const Texture& texture, const glm::vec2& position, const glm::vec2& size)
+{
+    SDL_FRect dst_rect = { position.x, position.y, size.x, size.y };
+    if (!SDL_RenderTextureRotated(_renderer, texture.texture, &texture.src_rect, &dst_rect, texture.angle, nullptr, texture.is_flip ? SDL_FlipMode::SDL_FLIP_HORIZONTAL : SDL_FlipMode::SDL_FLIP_NONE)) {
+        SDL_LogError(SDL_LOG_CATEGORY_ERROR, "SDL_RenderTexture Error: %s\n", SDL_GetError());
+    }
 }

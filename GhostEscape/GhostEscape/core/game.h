@@ -9,7 +9,24 @@
 
 class Scene;
 class AssetStore;
+class Texture;
+
 class Game {
+    Game(Game& game) = delete;
+    Game& operator=(const Game& game) = delete;
+
+    glm::vec2 _screen_size { 0.0f, 0.0f };
+    SDL_Window* _window = nullptr;
+    SDL_Renderer* _renderer = nullptr;
+    MIX_Mixer* _mixer = nullptr;
+    MIX_Track* _music_track = nullptr;
+    bool _is_running = true;
+    Uint64 _fps = 60;
+    Uint64 _frame_delay = 0;
+    float _dt = 0.0f;
+    Scene* _current_scene = nullptr;
+    AssetStore* _asset_store = nullptr;
+
 public:
     Game() { }
     ~Game();
@@ -30,26 +47,12 @@ public:
     void drawGrid(const glm::vec2& top_left, const glm::vec2& bottom_right, float grid_size, SDL_FColor fcolor);
     void drawBoundary(const glm::vec2& top_left, const glm::vec2& bottom_right, float boundary_size, SDL_FColor fcolor);
 
+    // 渲染函数
+    void renderTexture(const Texture& texture, const glm::vec2& position, const glm::vec2& size);
+
     // getters
     glm::vec2 getScreenSize() { return _screen_size; }
     SDL_Renderer* getRenderer() { return _renderer; }
     Scene* getCurrentScene() { return _current_scene; }
     AssetStore* getAssetStore() { return _asset_store; }
-
-private:
-    Game(Game& game) = delete;
-    Game& operator=(const Game& game) = delete;
-
-private:
-    glm::vec2 _screen_size { 0.0f, 0.0f };
-    SDL_Window* _window = nullptr;
-    SDL_Renderer* _renderer = nullptr;
-    MIX_Mixer* _mixer = nullptr;
-    MIX_Track* _music_track = nullptr;
-    bool _is_running = true;
-    Uint64 _fps = 60;
-    Uint64 _frame_delay = 0;
-    float _dt = 0.0f;
-    Scene* _current_scene = nullptr;
-    AssetStore* _asset_store = nullptr;
 };

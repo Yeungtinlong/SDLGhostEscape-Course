@@ -2,7 +2,12 @@
 
 #include <GhostEscape/core/actor.h>
 
+class SpriteAnim;
+
 class Player : public Actor {
+    SpriteAnim* _sprite_idle = nullptr;
+    SpriteAnim* _sprite_move = nullptr;
+    bool _is_moving = false;
 public:
     virtual void init() override;
     virtual void handleEvents(const SDL_Event& event) override;
@@ -12,6 +17,7 @@ public:
 
 private:
     void keyboardControl();
-    void move(float dt);
     void syncCamera();
+    void checkState();
+    void changeState(bool is_moving);
 };

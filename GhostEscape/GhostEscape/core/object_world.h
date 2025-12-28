@@ -5,8 +5,9 @@
 class ObjectWorld : public ObjectScreen {
 protected:
     glm::vec2 _position = glm::vec2 { .0f, .0f };
-
+    
 public:
+    virtual void init() override { _type = ObjectType::OBJECT_WORLD; }
     virtual void update(float dt) override;
 
     // getters

@@ -1,3 +1,4 @@
+#include <GhostEscape/enemy.h>
 #include <GhostEscape/player.h>
 #include <GhostEscape/scene_main.h>
 
@@ -8,32 +9,34 @@ void SceneMain::init()
     _player = new Player();
     _player->init();
     _player->setPosition(_world_size * 0.5f);
+    addChild(_player);
+
+    Enemy* enemy = new Enemy();
+    enemy->init();
+    enemy->setPosition(_player->getPosition() + glm::vec2 { 100.0f, 0.0f });
+    enemy->setTarget(_player);
+    addChild(enemy);
 }
 
 void SceneMain::handleEvents(const SDL_Event& event)
 {
+    Scene::handleEvents(event);
 }
 
 void SceneMain::update(float dt)
 {
-    // _camera_position += glm::vec2(1.f, 1.f) * 320.0f * dt;
-    // SDL_Log("moving cam. (%f, %f)", _camera_position.x, _camera_position.y);
-    // SDL_Log("dt. %f", dt);
-    _player->update(dt);
+    Scene::update(dt);
 }
 
 void SceneMain::render()
 {
     renderBackground();
-    _player->render();
+    Scene::render();
 }
 
 void SceneMain::clean()
 {
-    if (_player != nullptr) {
-        _player->clean();
-        delete _player;
-    }
+    Scene::clean();
 }
 
 void SceneMain::renderBackground()

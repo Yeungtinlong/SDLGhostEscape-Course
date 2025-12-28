@@ -4,6 +4,11 @@
 
 class Player;
 class SceneMain : public Scene {
+    Player* _player = nullptr;
+
+private:
+    void renderBackground();
+
 public:
     SceneMain() = default;
     virtual ~SceneMain() = default; // 所有类不在构造、析构函数里做任何事
@@ -13,10 +18,4 @@ public:
     virtual void update(float dt) override;
     virtual void render() override;
     virtual void clean() override;
-
-private:
-    void renderBackground();
-
-private:
-    Player* _player = nullptr;
 };

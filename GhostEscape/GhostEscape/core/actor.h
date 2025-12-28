@@ -8,6 +8,8 @@ protected:
     float _max_speed = 100.0f;
 
 public:
+    void move(float dt);
+
     // getters and setters
     glm::vec2 getVelocity() { return _velocity; }
     void setVelocity(glm::vec2 velocity) { _velocity = velocity; }

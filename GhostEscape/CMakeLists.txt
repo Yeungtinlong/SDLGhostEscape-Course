@@ -7,13 +7,18 @@ target_sources(${TARGET}
     "GhostEscape/main.cpp"
     "GhostEscape/scene_main.cpp"
     "GhostEscape/player.cpp"
-
+    "GhostEscape/enemy.cpp"
+    
     "GhostEscape/core/game.cpp"
+    "GhostEscape/core/asset_store.cpp"
     "GhostEscape/core/object.cpp"
     "GhostEscape/core/scene.cpp"
     "GhostEscape/core/object_screen.cpp"
     "GhostEscape/core/object_world.cpp"
-    "GhostEscape/core/asset_store.cpp"
+    "GhostEscape/core/actor.cpp"
+    "GhostEscape/core/object_affiliate.cpp"
+    "GhostEscape/affiliate/sprite.cpp"
+    "GhostEscape/affiliate/sprite_anim.cpp"
 )
 
 # target_include_directories(${TARGET} PUBLIC 
