@@ -7,6 +7,8 @@ class SpriteAnim : public Sprite {
     int _total_frames = 0;
     int _fps = 10;
     float _frame_timer = 0.0f;
+    bool _is_loop = true;
+    bool _is_finish = false;
 
     virtual void update(float dt) override;
     virtual void render() override;
@@ -22,4 +24,9 @@ public:
     void setCurrentFrame(int current_frame) { _current_frame = current_frame; }
     float getFrameTimer() { return _frame_timer; }
     void setFrameTimer(float frame_timer) { _frame_timer = frame_timer; }
+
+    bool getIsLoop() { return _is_loop; }
+    void setIsLoop(bool is_loop) { _is_loop = is_loop; }
+    bool getIsFinish() { return _is_finish; }
+    void setIsFinish(bool is_finish) { _is_finish = is_finish; }
 };

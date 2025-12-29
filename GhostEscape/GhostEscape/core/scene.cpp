@@ -50,13 +50,31 @@ void Scene::handleEvents(const SDL_Event& event)
 void Scene::update(float dt)
 {
     Object::update(dt);
-    for (const auto& child : _children_world) {
-        if (_is_active)
+    for (auto it = _children_world.begin(); it != _children_world.end();) {
+        auto child = *it;
+        if (child->getNeedRemove()) {
+            it = _children_world.erase(it);
+            child->clean();
+            delete child;
+            continue;
+        }
+
+        if (child->getActive())
             child->update(dt);
+        it++;
     }
-    for (const auto& child : _children_screen) {
-        if (_is_active)
+    for (auto it = _children_screen.begin(); it != _children_screen.end();) {
+        auto child = *it;
+        if (child->getNeedRemove()) {
+            it = _children_screen.erase(it);
+            child->clean();
+            delete child;
+            continue;
+        }
+
+        if (child->getActive())
             child->update(dt);
+        it++;
     }
 }
 
@@ -64,11 +82,11 @@ void Scene::render()
 {
     Object::render();
     for (const auto& child : _children_world) {
-        if (_is_active)
+        if (child->getActive())
             child->render();
     }
     for (const auto& child : _children_screen) {
-        if (_is_active)
+        if (child->getActive())
             child->render();
     }
 }

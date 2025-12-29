@@ -19,6 +19,7 @@ target_sources(${TARGET}
     "GhostEscape/core/object_affiliate.cpp"
     "GhostEscape/affiliate/sprite.cpp"
     "GhostEscape/affiliate/sprite_anim.cpp"
+    "GhostEscape/affiliate/collider.cpp"
 )
 
 # target_include_directories(${TARGET} PUBLIC 

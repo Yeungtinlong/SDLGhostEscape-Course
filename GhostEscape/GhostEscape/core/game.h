@@ -49,6 +49,7 @@ public:
 
     // 渲染函数
     void renderTexture(const Texture& texture, const glm::vec2& position, const glm::vec2& size);
+    void renderFillCircle(const glm::vec2& position, const glm::vec2& size);
 
     // getters
     glm::vec2 getScreenSize() { return _screen_size; }

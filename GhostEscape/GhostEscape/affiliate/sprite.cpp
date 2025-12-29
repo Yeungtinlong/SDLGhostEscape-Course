@@ -15,7 +15,7 @@ void Sprite::render()
         return;
 
     glm::vec2 position = _parent->getRenderPosition() + _offset;
-    Game::GetInstance().renderTexture(_texture, position, _size);
+    game.renderTexture(_texture, position, _size);
 }
 
 Sprite* Sprite::addSpriteChild(ObjectScreen* parent, const std::string& file_path, const glm::vec2& offset, float scale)

@@ -9,9 +9,21 @@ void Object::handleEvents(const SDL_Event& event)
 }
 void Object::update(float dt)
 {
-    for (const auto& child : _children) {
+    for (auto it = _children.begin(); it != _children.end();) {
+        auto child = *it;
+        if (child->_need_remove) {
+            it = _children.erase(it);
+            child->clean();
+            delete child;
+            continue;
+        }
+
         if (child->getActive())
             child->update(dt);
+        it++;
+    }
+
+    for (const auto& child : _children) {
     }
 }
 void Object::render()

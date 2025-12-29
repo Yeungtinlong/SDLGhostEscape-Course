@@ -2,13 +2,25 @@
 
 void SpriteAnim::update(float dt)
 {
+    if (_is_finish)
+        return;
+
     Sprite::update(dt);
     _current_frame = static_cast<int>(_frame_timer * _fps) % _total_frames;
     _frame_timer += dt;
+    if (_frame_timer * _fps > _total_frames) {
+        if (!_is_loop) {
+            _is_finish = true;
+            SDL_Log("Animation finished.\n");
+        }
+    }
 }
 
 void SpriteAnim::render()
 {
+    if (_texture.texture == nullptr || _parent == nullptr || _is_finish)
+        return;
+
     _texture.src_rect.x = _current_frame * _texture.src_rect.w;
     glm::vec2 render_size = _size * _scale;
     game.renderTexture(_texture, _parent->getRenderPosition() + _offset - 0.5f * render_size, render_size);

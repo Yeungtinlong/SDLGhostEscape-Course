@@ -172,3 +172,14 @@ void Game::renderTexture(const Texture& texture, const glm::vec2& position, cons
         SDL_LogError(SDL_LOG_CATEGORY_ERROR, "SDL_RenderTexture Error: %s\n", SDL_GetError());
     }
 }
+
+void Game::renderFillCircle(const glm::vec2& position, const glm::vec2& size)
+{
+    SDL_Texture* texture = _asset_store->getImage("assets/UI/circle.png");
+    SDL_FRect dst_rect = { position.x, position.y, size.x, size.y };
+    SDL_SetTextureAlphaModFloat(texture, 0.5f);
+    if (!SDL_RenderTexture(_renderer, texture, nullptr, &dst_rect)) {
+        SDL_LogError(SDL_LOG_CATEGORY_ERROR, "SDL_RenderTexture Error: %s\n", SDL_GetError());
+    }
+    SDL_SetTextureAlphaModFloat(texture, 1.0f);
+}

@@ -10,6 +10,7 @@ protected:
     Game& game = Game::GetInstance();
     std::vector<Object*> _children;
     bool _is_active = true;
+    bool _need_remove = false;
 
 public:
     Object() = default;
@@ -29,6 +30,7 @@ public:
     // getters
     ObjectType getType() const { return _type; }
     bool getActive() const { return _is_active; }
+    bool getNeedRemove() { return _need_remove; }
     // setters
     void setType(ObjectType type) { _type = type; }
     void setActive(bool is_active) { _is_active = is_active; }

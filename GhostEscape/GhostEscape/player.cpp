@@ -1,3 +1,4 @@
+#include <GhostEscape/affiliate/collider.h>
 #include <GhostEscape/affiliate/sprite_anim.h>
 #include <GhostEscape/core/scene.h>
 #include <GhostEscape/player.h>
@@ -9,6 +10,8 @@ void Player::init()
     _sprite_idle = SpriteAnim::addSpriteAnimChild(this, "assets/sprite/ghost-idle.png", glm::vec2 { 0.0f }, 2.0f);
     _sprite_move = SpriteAnim::addSpriteAnimChild(this, "assets/sprite/ghost-move.png", glm::vec2 { 0.0f }, 2.0f);
     _sprite_move->setActive(false);
+
+    _collider = Collider::addColliderChild(this, _sprite_idle->getSize());
 }
 
 void Player::handleEvents(const SDL_Event& event)
