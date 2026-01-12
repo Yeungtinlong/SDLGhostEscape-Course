@@ -15,17 +15,17 @@ void Sprite::render()
         return;
 
     glm::vec2 position = _parent->getRenderPosition() + _offset;
-    game.renderTexture(_texture, position, _size);
+    game.renderTexture(_texture, position, _size * _scale);
 }
 
-Sprite* Sprite::addSpriteChild(ObjectScreen* parent, const std::string& file_path, const glm::vec2& offset, float scale)
+Sprite* Sprite::addSpriteChild(ObjectScreen* parent, const std::string& file_path, const glm::vec2& offset, float scale, Anchor anchor)
 {
     auto* sprite = new Sprite();
     sprite->init();
     sprite->setTexture(Texture(file_path));
     sprite->setParent(parent);
-    sprite->setOffset(offset);
     sprite->setScale(scale);
+    sprite->setOffsetByAnchor(anchor);
     parent->addChild(sprite);
     return sprite;
 }
@@ -34,4 +34,16 @@ void Sprite::setTexture(Texture texture)
 {
     _texture = texture;
     _size = glm::vec2 { texture.src_rect.w, texture.src_rect.h };
+}
+
+void Sprite::setScale(float scale)
+{
+    _scale = scale;
+    setOffsetByAnchor(_anchor);
+}
+
+void Sprite::setSize(glm::vec2 size)
+{
+    _size = size;
+    setOffsetByAnchor(_anchor);
 }

@@ -9,6 +9,11 @@ void Object::handleEvents(const SDL_Event& event)
 }
 void Object::update(float dt)
 {
+    for (auto obj : _objects_to_add) {
+        addChild(obj);
+    }
+    _objects_to_add.clear();
+
     for (auto it = _children.begin(); it != _children.end();) {
         auto child = *it;
         if (child->_need_remove) {

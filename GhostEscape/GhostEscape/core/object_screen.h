@@ -4,7 +4,7 @@
 
 class ObjectScreen : public Object {
 protected:
-    glm::vec2 _render_position = glm::vec2 { 0.f, 0.f };
+    glm::vec2 _render_position = glm::vec2 { 0.0f, 0.0f };
 
 public:
     virtual void init() override { _type = ObjectType::OBJECT_SCREEN; }

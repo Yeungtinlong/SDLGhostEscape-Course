@@ -18,7 +18,7 @@ protected:
     virtual void render() override;
 
 public:
-    static Sprite* addSpriteChild(ObjectScreen* parent, const std::string& file_path, const glm::vec2& offset, float scale = 1.0f);
+    static Sprite* addSpriteChild(ObjectScreen* parent, const std::string& file_path, const glm::vec2& offset, float scale = 1.0f, Anchor anchor = Anchor::CENTER);
 
     // getters
     Texture getTexture() { return _texture; }
@@ -30,5 +30,8 @@ public:
     virtual void setTexture(Texture texture);
     void setAngle(float angle) { _texture.angle = angle; }
     void setFlip(bool is_flip) { _texture.is_flip = is_flip; }
-    void setScale(float scale) { _scale = scale; }
+    void setScale(float scale);
+
+    virtual glm::vec2 getSize() override { return _size * _scale; }
+    virtual void setSize(glm::vec2 size) override;
 };

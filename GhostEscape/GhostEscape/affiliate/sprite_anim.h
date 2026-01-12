@@ -14,7 +14,7 @@ class SpriteAnim : public Sprite {
     virtual void render() override;
 
 public:
-    static SpriteAnim* addSpriteAnimChild(ObjectScreen* parent, const std::string& file_path, const glm::vec2& offset, float scale = 1.0f);
+    static SpriteAnim* addSpriteAnimChild(ObjectScreen* parent, const std::string& file_path, float scale = 1.0f, Anchor anchor = Anchor::CENTER);
 
     // getters and setters
     int getTotalFrames() { return _total_frames; }

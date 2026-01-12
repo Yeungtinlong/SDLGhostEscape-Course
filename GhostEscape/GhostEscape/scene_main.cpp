@@ -1,6 +1,7 @@
 #include <GhostEscape/enemy.h>
 #include <GhostEscape/player.h>
 #include <GhostEscape/scene_main.h>
+#include <GhostEscape/world/effect.h>
 
 void SceneMain::init()
 {
@@ -11,11 +12,13 @@ void SceneMain::init()
     _player->setPosition(_world_size * 0.5f);
     addChild(_player);
 
+    
     Enemy* enemy = new Enemy();
     enemy->init();
     enemy->setPosition(_player->getPosition() + glm::vec2 { 100.0f, 0.0f });
     enemy->setTarget(_player);
-    addChild(enemy);
+
+    Effect::addEffectChild(this, "assets/effect/184_3_.png", _player->getPosition() + glm::vec2 { 100.0f, 0.0f }, 1.0f, enemy);
 }
 
 void SceneMain::handleEvents(const SDL_Event& event)

@@ -2,16 +2,19 @@
 #include <GhostEscape/affiliate/sprite_anim.h>
 #include <GhostEscape/core/scene.h>
 #include <GhostEscape/player.h>
+#include <GhostEscape/raw/stats.h>
 
 void Player::init()
 {
     Actor::init();
     _max_speed = 500.0f;
-    _sprite_idle = SpriteAnim::addSpriteAnimChild(this, "assets/sprite/ghost-idle.png", glm::vec2 { 0.0f }, 2.0f);
-    _sprite_move = SpriteAnim::addSpriteAnimChild(this, "assets/sprite/ghost-move.png", glm::vec2 { 0.0f }, 2.0f);
+    _sprite_idle = SpriteAnim::addSpriteAnimChild(this, "assets/sprite/ghost-idle.png", 2.0f, Anchor::CENTER);
+    _sprite_move = SpriteAnim::addSpriteAnimChild(this, "assets/sprite/ghost-move.png", 2.0f, Anchor::CENTER);
     _sprite_move->setActive(false);
 
-    _collider = Collider::addColliderChild(this, _sprite_idle->getSize());
+    _collider = Collider::addColliderChild(this, _sprite_idle->getSize() * 0.5f, Collider::ColliderType::COLLIDER_CIRCLE, Anchor::CENTER);
+    _stats = Stats::addStatsChild(this);
+    _die_effect = Effect::addEffectChild(nullptr, "assets/effect/1764.png", glm::vec2 { 0 }, 1.0f);
 }
 
 void Player::handleEvents(const SDL_Event& event)
@@ -27,12 +30,14 @@ void Player::update(float dt)
     move(dt);
     syncCamera();
     checkState();
+    checkIsDead();
 }
 
 void Player::render()
 {
     Actor::render();
-    // game.drawBoundary(_render_position, _render_position + glm::vec2(20.0f), 5.0f, { 1.0f, 0.0f, 0.0f, 1.0f });
+    // game.renderFillCircle(_render_position - glm::vec2(10.0f) * 0.5f, glm::vec2(10.0f));
+    // game.drawBoundary(_render_position, _render_position + _sprite_idle->getSize(), 5.0f, { 1.0f, 0.0f, 0.0f, 1.0f });
 }
 
 void Player::clean()
@@ -54,6 +59,15 @@ void Player::keyboardControl()
     }
     if (currentKeyState[SDL_SCANCODE_D]) {
         _velocity.x = _max_speed;
+    }
+}
+
+void Player::checkIsDead()
+{
+    if (!getIsAlive()) {
+        game.getCurrentScene()->safeAddChild(_die_effect);
+        _die_effect->setPosition(_position);
+        setActive(false);
     }
 }
 

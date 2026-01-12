@@ -1,6 +1,7 @@
 #include <GhostEscape/affiliate/sprite_anim.h>
 #include <GhostEscape/core/scene.h>
 #include <GhostEscape/enemy.h>
+#include <GhostEscape/raw/stats.h>
 
 void Enemy::aim_target(Player* target)
 {
@@ -17,15 +18,16 @@ void Enemy::init()
 {
     Actor::init();
     _max_speed = 100.0f;
-    _anim_normal = SpriteAnim::addSpriteAnimChild(this, "assets/sprite/ghost-Sheet.png", glm::vec2 { 0.0f }, 2.0f);
-    _anim_hurt = SpriteAnim::addSpriteAnimChild(this, "assets/sprite/ghostHurt-Sheet.png", glm::vec2 { 0.0f }, 2.0f);
-    _anim_die = SpriteAnim::addSpriteAnimChild(this, "assets/sprite/ghostDead-Sheet.png", glm::vec2 { 0.0f }, 2.0f);
+    _anim_normal = SpriteAnim::addSpriteAnimChild(this, "assets/sprite/ghost-Sheet.png", 1.5f);
+    _anim_hurt = SpriteAnim::addSpriteAnimChild(this, "assets/sprite/ghostHurt-Sheet.png", 1.5f);
+    _anim_die = SpriteAnim::addSpriteAnimChild(this, "assets/sprite/ghostDead-Sheet.png", 1.5f);
     _current_anim = _anim_normal;
     _anim_hurt->setActive(false);
     _anim_die->setActive(false);
     _anim_die->setIsLoop(false);
 
     _collider = Collider::addColliderChild(this, _anim_normal->getSize());
+    _stats = Stats::addStatsChild(this);
 }
 
 void Enemy::remove()
@@ -38,9 +40,11 @@ void Enemy::remove()
 void Enemy::update(float dt)
 {
     Actor::update(dt);
-    aim_target(_player);
-    move(dt);
-    attack();
+    if (_player->getActive()) {
+        aim_target(_player);
+        move(dt);
+        attack();
+    }
     remove();
 }
 
@@ -74,10 +78,12 @@ void Enemy::changeState(State state)
 
 void Enemy::attack()
 {
-    if (_collider == nullptr || _player->getCollider() == nullptr)
+    if (_collider == nullptr || _player == nullptr || _player->getCollider() == nullptr)
         return;
 
     if (_collider->isCollidingWith(_player->getCollider())) {
-        // SDL_Log("hit player!");
+        if (_stats != nullptr && _player->getStats() != nullptr) {
+            _player->takeDamage(_stats->getDamage());
+        }
     }
 }

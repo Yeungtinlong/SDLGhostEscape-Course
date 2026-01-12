@@ -3,16 +3,17 @@
 #include <GhostEscape/core/object_affiliate.h>
 
 class Collider : public ObjectAffiliate {
-protected:
+public:
     enum class ColliderType {
         COLLIDER_CIRCLE, // _size.x is radius*2 for CIRCLE
         COLLIDER_RECTANGLE,
     };
 
+protected:
     ColliderType _type = ColliderType::COLLIDER_CIRCLE;
 
 public:
-    static Collider* addColliderChild(ObjectScreen* parent, const glm::vec2& size, ColliderType type = ColliderType::COLLIDER_CIRCLE);
+    static Collider* addColliderChild(ObjectScreen* parent, const glm::vec2& size, ColliderType type = ColliderType::COLLIDER_CIRCLE, Anchor anchor = Anchor::CENTER);
 
     virtual void render() override;
 
